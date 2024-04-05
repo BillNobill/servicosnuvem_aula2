@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Consulta de CNPJ</title>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+	<div class="container">
+        <h1>Consulta de CNPJ</h1>
+        <div class="form-group">
+            <label for="numero_cnpj">Número do CNPJ:</label>
+            <input type="text" name="numero_cnpj" id="numero_cnpj" placeholder="Digite o CNPJ">
+            <button id="chamar" onclick="chamarServicoReceitaWS()">Pesquisar no endereço Receita WS</button>
+        </div>
+        <div id="mensagem" style="display: none;"></div> <!-- Div para exibir mensagens -->
+        <button id="visibilidade" onclick="alternarVisibilidadeMensagens()">Mostrar/Ocultar Mensagens</button> <!-- Botão para mostrar/ocultar mensagens -->
+    </div>
+</body>
+
+</html>
